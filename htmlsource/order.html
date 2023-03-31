@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <textarea> : 사용자한테 여러줄의 내용을 입력 받을 때 사용 
+        rows : 행 수, cols : 컬럼 수 
+    -->
+    <h1>상품주문서</h1>
+    <form action="" method="get">
+        <fieldset>
+            <legend>개인정보</legend>
+            <ul>
+                <li>
+                    <label for="">이름</label>
+                    <input type="text" name="name" id="" placeholder="여백없이 입력"/>
+            </li>
+            <ul>
+                </li>
+                <label for="">연락처</label>
+                    <input type="tel" name="tel" id="" placeholder="연락가능한 번호"/>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>배송지정보</legend>
+            <ul>
+                <li>
+                    <label for="">주소</label>
+                    <input type="text" name="addr" id="" size="40"/>
+                </li>
+                <label for="">전화번호</label>
+                    <input type="tel" name="tel2" id=""/>
+                    <label for="">메모</label>
+                    <textarea name="memo" id="" cols="40" rows="3"></textarea>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>주문정보</legend>
+            <ul>
+                <li><input type="checkbox" name="addr" id=""/>과테말라 안티구아(100g)</li>
+                <label>
+                    <input type="number" name="amount" id="" vlaue="0" min="0" max="5"/>개</label>                    
+            </ul>
+            <ul>
+                <li></li>
+                    <input type="checkbox" name="addr" id=""/>인도네이아만델링(100g)
+                </li>
+                <label>
+                    <input type="number" name="amount1" id="" vlaue="0" min="0" max="5"/>개</label>                    
+            </ul>
+            <ul>
+                <li></li>
+                    <input type="checkbox" name="addr" id=""/>탐라는도다(블렌딩)(100g)
+                </li>
+                <label>
+                    <input type="number" name="amount" id="" vlaue="0" min="0" max="5"/>개</label>                    
+            </ul>
+        </fieldset>   
+    </form>
+</body>
+</html>

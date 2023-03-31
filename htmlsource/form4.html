@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        input type에 쓸 수 있는 유형
+        1)text (★)
+        2)hidden(★)
+        3)search
+        4)tel
+        5)url
+        6)email(★)
+        7)password(★)
+        8)datetime, datetime-local
+        9)data
+        10)month
+        11)week
+        12)time
+        13)number (★)
+        14)range
+        15)color
+        16)file(★)
+        17)submit(★)
+        18)reset(★)
+        19)button(★)
+        20)checkbox(★)
+        21)radio(★)
+
+        input : 속성
+
+
+
+
+     -->
+    
+     <form action="" method="get">
+        <div>
+            <label for ="">hidden</label>
+            <!-- 사요자 화면 상에 보이지 않음 : 서버로 넘기는 값을 사용자ㅏ 모르게 할 때 -->
+            <input type = "hidden" name="name"/>
+        </div>
+        <div>
+            <label for="">search</label>
+            <!-- text와 동일 : 끝부분에 x표시 나타남 -->
+            <input type="search" name="search" id=""/>
+        </div>
+        <div>
+            <label for="">tel</label>
+            <!-- 패턴에 쓸 수 있는 값은 정규식 형태 => 검증  -->
+            <input type="tel" name="tel" id="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+        </div>
+    
+        <div>
+            <label for="">url</label>
+            <!-- 형태의 조소가 들어왔는지 검증 -->
+            <input type="url" name="search" id=""/>
+        </div>
+        <div>
+            <input type="submit" value="전송"/>
+        </div>
+        <div>
+            <label for="">email</label>
+            <input type="email" email="email" id=""/>
+        </div>
+        <div>
+            <label for="">file</label>
+            <!-- 형태의 조소가 들어왔는지 검증 -->
+            <input type="file" name="file" id="" multiple/>
+        </div>
+     </form>
+</body>
+</html>
